@@ -2,46 +2,64 @@
 <html>
 <head>
 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css" >
 	<title>Заголовок</title>
 </head>
+<body>
 <header>
-    <h1>Персональный сайт Кристины Ветровой</h1>
-    <div class="">
-         <div class="">
-            <img class="" src="img/logo.png" alt="logo">
+    <div class="menu">
+      <div class="block_menu ">
+        <img class="logo_menu" src="img/logo.png" alt="logo">
+      </div>
+      <div class="block_menu">
+        <input type="checkbox" id="ham-menu">
+        <label for="ham-menu">
+          <div class="hide-des">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
           </div>
-        <nav class="flex ">
-          <ul class="flex gap-5 ">
-            <li class=""><a href="#">Услуги</a></li>
-            <li class=""><a href="#">Портфолио</a></li>
-            <li class=""><a href="#">Отзывы</a></li>
-            <li class=""><a href="#">Вакансии</a></li>
-            <li class=""><a href="#">Контакты</a></li>
+
+        </label>
+        <div class="full-page-green"></div>
+        <div class="ham-menu ">
+          <ul class="centre-text bold-text flex-menu">
+            <li class="li_menu ubuntu"><a href="#">Услуги</a></li>
+            <li class="li_menu ubuntu"><a href="#">Портфолио</a></li>
+            <li class="li_menu ubuntu"><a href="#">Отзывы</a></li>
+            <li class="li_menu ubuntu"><a href="#">Вакансии</a></li>
+            <li class="li_menu ubuntu"><a href="#">Контакты</a></li>
+
           </ul>
-        </nav>
-        <div class="flex justify-between w-4/5">
+        </div>
+      </div>
+        <div class="flex justify-between w-4/5 number_menu">
           <div class="flex flex-1 ">
-              <a class="flex items-center gap-3" href="#">
-                <i class="text-xs fas fa-location-arrow"></i>
-                <span>Ростов-на-Дону</span>
-              </a>
+            <a class="flex items-center gap-3" href="#">
+              <i class="text-xs fas fa-location-arrow"></i>
+              <span class="ubuntu">Ростов-на-Дону</span>
+            </a>
           </div>   
           <div class="flex flex-1 ">
-              <a class="flex items-center gap-3" href="#">
-                <i class="text-xs fas fa-location-arrow"></i>
-                <span>8(863)243-15-10</span>
-              </a>
+            <a class="flex items-center gap-3" href="#">
+              <i class="text-xs fas fa-location-arrow"></i>
+              <span class="ubuntu">8(863)243-15-10</span>
+            </a>
           </div>      
+        </div>
       </div>
 </header>
-<body>
+<main>
 	<div class="advertising" >	
-    
-		<h2>
+
+		<h2 class="ubuntu">
 			Рекламно-информационное агентство
 		</h2>
-		<p>
+		<p class="ubuntu">
 			Будем рады, если Вы обратитесь в наше Агентство. Мы готовы предложить Вам передовые решения для продвижения Вашего бизнеса.
 		</p>
 		<button>Номер телефона</button>
@@ -57,22 +75,23 @@
 			</div>
 		</div>	
 	</div>
-</body>
+</main>
 <footer>
 	<div class="footer">
 		<div class="">
-              <img class="" src="img/logo.png" alt="logo">
-            </div>
-		<nav class="">
-          <ul class="">
-            <li class=""><a href="#">Услуги</a></li>
-            <li class=""><a href="#">Портфолио</a></li>
-            <li class=""><a href="#">Отзывы</a></li>
-            <li class=""><a href="#">Вакансии</a></li>
-            <li class=""><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-	</div>
+      <img class="" src="img/logo.png" alt="logo">
+    </div>
+    <nav class="">
+      <ul class="">
+        <li class="ubuntu"><a href="#">Услуги</a></li>
+        <li class="ubuntu"><a href="#">Портфолио</a></li>
+        <li class="ubuntu"><a href="#">Отзывы</a></li>
+        <li class="ubuntu"><a href="#">Вакансии</a></li>
+        <li class="ubuntu"><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
 </footer>
+</body>
 <script src="script.js"></script>
 </html>
