@@ -1,0 +1,113 @@
+@media screen and (min-width: 100px) and (max-width: 835px) {
+	/*логотип*/
+	.logo_menu{
+		margin:0 0 0 40px;
+	}
+	/*номер и город до нажатия кнопки меню*/
+	.info-menu-top{
+		float:right;
+	}
+	.info-menu-top ul{
+		margin:0 0 0 0px;
+	}
+	.info-menu-top li a{
+		text-decoration: none; /* Отменяем подчеркивание у ссылки */
+	}
+	a { 
+	    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+	   } 
+	/*Скрываем чекбокс:*/
+	.hidden-menu-ticker {
+	    display: none;
+	}
+	/*Стилизация кнопки открытия меню*/
+	.btn-menu {
+	    color: #D51522;
+	    border:0px ;
+	    padding: 5px;
+	    position: fixed;
+	    top: 15px;
+	    left: 5px;
+	    cursor: pointer;
+	    transition: left .23s;
+	    z-index: 3;
+	    width: 25px;
+	    -webkit-transform: translateZ(0);
+	    -webkit-backface-visibility: hidden;
+	    -webkit-border-radius: 2px;
+	    -moz-border-radius: 2px;
+	    border-radius: 1px;
+	}
+	 
+	.btn-menu span {
+	    display: block;
+	    height: 5px;
+	    background-color: #D51522;
+	    margin: 5px 0 0;
+	    transition: all .1s linear .23s;
+	    position: relative;
+	}
+	 
+	.btn-menu span.first {
+	    margin-top: 0;
+	}
+	/* Стилизация пунктов меню*/
+	.hidden-menu {
+	    display: block;
+	    position: fixed;
+	    list-style:none;
+	    padding: 50px 10px 10px;
+	    margin: 0;
+	    box-sizing: border-box;
+	    width: 80vw;
+	    background: -webkit-linear-gradient(0deg, #211F2A 70%, #FFFFFF 30%);
+	    background: linear-gradient(0deg, #211F2A 70%, #FFFFFF 30%);
+	    height: 100%;
+	    top: 0;
+	    left: -80vw;
+	    transition: left .2s;
+	    z-index: 2;
+	    -webkit-transform: translateZ(0);
+	    -webkit-backface-visibility: hidden;
+	}
+	 
+	.hidden-menu li {
+	    padding:10px 0;
+	}
+	 
+	.hidden-menu li a {
+	    font-size:15px;
+	    color:#000;
+	    padding:6px 0px;
+
+	}
+	.info-menu{
+		margin:30px 0 0 -40px;
+	}
+	.info-menu li{
+		list-style-type: none;
+		margin:0;
+	}
+	.info-menu li a {
+		color: #FFFFFF;
+
+	}
+	/*Стили для работы меню:*/
+	.hidden-menu-ticker:checked ~ .btn-menu {
+	    left: 10px;
+	}
+	.hidden-menu-ticker:checked ~ .hidden-menu {
+	    left: 0;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.first {
+	    -webkit-transform: rotate(45deg);
+	    top: 10px;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.second {
+	    opacity: 0;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.third {
+	    -webkit-transform: rotate(-45deg);
+	    top: -10px;
+	}
+}
