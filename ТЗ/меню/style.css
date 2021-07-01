@@ -1,20 +1,36 @@
 @media screen and (min-width: 100px) and (max-width: 835px) {
+	body{
+		margin: 0 0 0 0;
+	}
+	.block_menu {
+		font-family: Ubuntu; 
+		margin: 0 0 0 0;
+		background-color: #F6F6F6;
+		height:  72px;
+	}
 	/*логотип*/
 	.logo_menu{
-		margin:0 0 0 40px;
+		margin:10px 0 0 14vw;
 	}
 	/*номер и город до нажатия кнопки меню*/
 	.info-menu-top{
+		padding: 0;
 		float:right;
+		margin-top: 10px;
+		margin-right: 2vw;
 	}
 	.info-menu-top ul{
 		margin:0 0 0 0px;
+		text-decoration: none; 
+
 	}
 	.info-menu-top li a{
-		text-decoration: none; /* Отменяем подчеркивание у ссылки */
+		text-decoration: none; 
+		float:right;
+		color: #2B2B2B;
 	}
 	a { 
-	    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+	    text-decoration: none; 
 	   } 
 	/*Скрываем чекбокс:*/
 	.hidden-menu-ticker {
@@ -31,7 +47,7 @@
 	    cursor: pointer;
 	    transition: left .23s;
 	    z-index: 3;
-	    width: 25px;
+	    width: 38px;
 	    -webkit-transform: translateZ(0);
 	    -webkit-backface-visibility: hidden;
 	    -webkit-border-radius: 2px;
@@ -87,6 +103,7 @@
 	.info-menu li{
 		list-style-type: none;
 		margin:0;
+		padding: 0;
 	}
 	.info-menu li a {
 		color: #FFFFFF;
@@ -105,9 +122,12 @@
 	}
 	.hidden-menu-ticker:checked ~ .btn-menu span.second {
 	    opacity: 0;
+
 	}
 	.hidden-menu-ticker:checked ~ .btn-menu span.third {
 	    -webkit-transform: rotate(-45deg);
 	    top: -10px;
 	}
 }
+@media screen and (min-width: 835px) {
+	}
