@@ -139,6 +139,7 @@ li{
 @media screen and (min-width: 835px) {
 	header{
 		margin: 0 15vw 0 15vw;
+		height: 150px;
 	}
 /*скрытие ненужно в десктопе*/
 	.hidden-menu-ticker{
@@ -198,5 +199,34 @@ li{
 	.btn-menu{
 		display: none;
 		visibility: hidden;
+	}
+
+	/*footer*/
+	footer{
+		margin: 0 0 0 0;
+		background-color: rgb(33,31,43);
+		height: 123px;
+		padding: 40px 0 0 0;
+	}
+	.footer{
+		margin: 0 15vw 0 15vw;
+		
+	}
+	.footer > div,ul,li{
+		display: inline-block;
+		
+	}
+	.footer-logo{
+		float: left;
+	}
+	.footer-menu{
+		width: 80%;
+		margin-left: auto;
+    	margin-right: auto;
+    	text-align: center;
+	}
+	.color-a{
+		color: #FFFFFF;
+		margin-right: 10px;
 	}
 }
