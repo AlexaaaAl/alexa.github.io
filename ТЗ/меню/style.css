@@ -1,3 +1,6 @@
+li{
+	list-style-type: none; 
+}
 @media screen and (min-width: 100px) and (max-width: 835px) {
 	body{
 		margin: 0 0 0 0;
@@ -29,6 +32,7 @@
 	}
 	.info-menu-top li a{
 		text-decoration: none; 
+		list-style-type: none; 
 		float:right;
 		color: #2B2B2B;
 	}
@@ -75,12 +79,12 @@
 	    display: block;
 	    position: fixed;
 	    list-style:none;
-	    padding: 50px 10px 10px;
+	    padding: 90px 10px 10px 10px;
 	    margin: 0;
 	    box-sizing: border-box;
 	    width: 80vw;
-	    background: -webkit-linear-gradient(0deg, #211F2A 70%, #FFFFFF 30%);
-	    background: linear-gradient(0deg, #211F2A 70%, #FFFFFF 30%);
+	    background: -webkit-linear-gradient(0deg, #211F2A 77%, #FFFFFF 23%);
+	    background: linear-gradient(0deg, #211F2A 77%, #FFFFFF 23%);
 	    height: 100%;
 	    top: 0;
 	    left: -80vw;
@@ -142,8 +146,10 @@
 	}
 	.hidden-menu{
 		display: inline-block;
-		margin: 0 0 0 10px;
+		margin: 25px 0 0 40px;
 		padding: 0;
+		z-index: 1;
+		 float: left;
 		
 	}
 	/*стиль меню*/
@@ -161,6 +167,7 @@
 	}
 /*стиль логотипа*/
 	.logo_menu{
+		float: left;
 		display: inline-block;
 		padding: 0;
 		margin-top: 10px;
@@ -170,11 +177,13 @@
 		display: inline-block;
 		padding: 0;
 		float:right;
-		margin-top: 19px;
+		margin-top: 10px;
 	}
 	.info-menu-top > li,a{
 		text-decoration: none; 
 		color: black;
+		text-align: right ;
+		list-style-type: none; 
 	}
 	.h3-menu{
 		margin: 0;
